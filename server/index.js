@@ -8,6 +8,9 @@ import product_router from './Routes/product_routes.js';
 import path from 'path'
 dotenv.config();
 
+const cors = require('cors');
+app.use(cors());  
+
 const app = express();
 const PORT = 3000;
 
