@@ -54,7 +54,7 @@ const AddProduct = () => {
           formData.append('category', value)
         });
    
-          const response = await fetch(`${API_URL}/product/addproduct/${firmId}`, {
+          const response = await fetch(`${API_URL}/product/add-product/${firmId}`, {
             method:'POST',
             body: formData
           })

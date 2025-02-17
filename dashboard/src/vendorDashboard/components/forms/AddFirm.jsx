@@ -1,3 +1,4 @@
+
 import React, {useState} from 'react'
 import { API_URL } from '../../data/apiPath';
 import { ThreeCircles } from 'react-loader-spinner';
@@ -58,7 +59,7 @@ const AddFirm = () => {
             formData.append('region', value)
           })
 
-          const response = await fetch(`${API_URL}/restro/add-restro`,{
+          const response = await fetch(`${API_URL}/firm/add-firm`,{
             method:'POST',
             headers:{
               'token': `${loginToken}`
