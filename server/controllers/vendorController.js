@@ -5,9 +5,7 @@ const dotEnv = require('dotenv');
 
 dotEnv.config();
 
-const secretKey = process.env.WhatIsYourName
-
-
+const secretKey = process.env.SECRET_KEY
 
 const vendorRegister = async(req, res) => {
     const { username, email, password } = req.body;
