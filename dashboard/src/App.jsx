@@ -6,13 +6,11 @@ import "./App.css"
 import NavBar from './vendorDashboard/components/NavBar'
 import Login from './vendorDashboard/components/forms/Login'
 import NotFound from './vendorDashboard/components/NotFound'
-import {AppClient } from '../../client/src/App'
 const App = () => {
   return (
     <div>
       <Routes>
-          <Route path='/' element={<AppClient />} />
-          <Route path='/admin' element = {<LandingPage />}/>
+          <Route path='/' element = {<LandingPage />}/>
           <Route path='/*' element = {<NotFound />} />
       </Routes>
     </div>
