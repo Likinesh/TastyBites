@@ -126,7 +126,9 @@ const showAllProductsHandler = ()=>{
             logOutHandler = {logOutHandler}
             />
             <div className="collectionSection">
-            <SideBar showFirmHandler={showFirmHandler} showProductHandler ={showProductHandler}
+            <SideBar 
+            showFirmHandler={showFirmHandler} 
+            showProductHandler ={showProductHandler}
             showAllProductsHandler = {showAllProductsHandler}
             showFirmTitle={showFirmTitle}
             />
